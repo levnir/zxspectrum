@@ -1,0 +1,718 @@
+{
+  "programs": [
+    {
+      "id": "biorhythm",
+      "name": "Biorhythm",
+      "file": "tapes/nir-programs/biorhythm.tzx",
+      "folder": "nir-programs",
+      "category": "utility",
+      "description": "Biorhythm calculator. Enter your birth date and a start date to plot your physical (23-day), emotional (28-day) and intellectual (33-day) cycles on screen.",
+      "language": "english",
+      "joystick": false,
+      "controls": []
+    },
+    {
+      "id": "bomber",
+      "name": "Bomber",
+      "file": "tapes/nir-programs/bomber.tzx",
+      "folder": "nir-programs",
+      "category": "game",
+      "description": "Bomber arcade game. Fly over a city and drop bombs to destroy buildings.",
+      "language": "english",
+      "joystick": false,
+      "controls": [
+        { "key": "0", "action": "Drop bomb" }
+      ]
+    },
+    {
+      "id": "bul-pghya",
+      "name": "Bul Pghya",
+      "file": "tapes/nir-programs/bul pghya.tzx",
+      "folder": "nir-programs",
+      "category": "game",
+      "description": "Bulls and Cows number guessing game (Hebrew: בול פגיעה = Direct Hit). The computer picks a secret number; you guess and are told how many digits are correct.",
+      "language": "bilingual",
+      "joystick": false,
+      "controls": []
+    },
+    {
+      "id": "char-editor",
+      "name": "Character Editor",
+      "file": "tapes/nir-programs/char editor.tzx",
+      "folder": "nir-programs",
+      "category": "utility",
+      "description": "UDG (User Defined Graphics) character editor. Design custom 8×8 pixel characters using an on-screen grid.",
+      "language": "english",
+      "joystick": false,
+      "controls": [
+        { "key": "5", "action": "Move cursor left" },
+        { "key": "6", "action": "Move cursor down" },
+        { "key": "7", "action": "Move cursor up" },
+        { "key": "8", "action": "Move cursor right" },
+        { "key": "C", "action": "Load a character" },
+        { "key": "R", "action": "Ready / finish" }
+      ]
+    },
+    {
+      "id": "decide",
+      "name": "Decide",
+      "file": "tapes/nir-programs/decide.tzx",
+      "folder": "nir-programs",
+      "category": "utility",
+      "description": "Decision-making aid (Hebrew interface). Enter options and criteria, assign weights and scores, and the program calculates the best choice.",
+      "language": "bilingual",
+      "joystick": false,
+      "controls": []
+    },
+    {
+      "id": "decode",
+      "name": "Decode",
+      "file": "tapes/nir-programs/decode.tzx",
+      "folder": "nir-programs",
+      "category": "game",
+      "description": "Code-breaking game similar to Mastermind. Guess the secret letter sequence and receive hints on correct positions.",
+      "language": "english",
+      "joystick": false,
+      "controls": [
+        { "key": "S", "action": "Show solution" },
+        { "key": "Q", "action": "Quit" }
+      ]
+    },
+    {
+      "id": "dots",
+      "name": "Dots",
+      "file": "tapes/nir-programs/dots.tzx",
+      "folder": "nir-programs",
+      "category": "game",
+      "description": "Dots and Boxes grid game. Take turns drawing lines between dots; the player who completes the most boxes wins.",
+      "language": "english",
+      "joystick": false,
+      "controls": []
+    },
+    {
+      "id": "drawer",
+      "name": "Drawer",
+      "file": "tapes/nir-programs/drawer.tzx",
+      "folder": "nir-programs",
+      "category": "utility",
+      "description": "Screen layout design tool. Define boundaries (lines and tabs) and draw content within them — used for designing screen templates.",
+      "language": "english",
+      "joystick": false,
+      "controls": []
+    },
+    {
+      "id": "duck",
+      "name": "Duck",
+      "file": "tapes/nir-programs/duck.tzx",
+      "folder": "nir-programs",
+      "category": "game",
+      "description": "Duck shooting gallery. Ducks move across the screen — shoot them to reach the target score you set at the start.",
+      "language": "english",
+      "joystick": false,
+      "controls": [
+        { "key": "Any key", "action": "Shoot" }
+      ]
+    },
+    {
+      "id": "exam",
+      "name": "Exam",
+      "file": "tapes/nir-programs/exam.tzx",
+      "folder": "nir-programs",
+      "category": "educational",
+      "description": "Quiz and exam engine with Hebrew interface. Teacher mode to create quizzes; student mode to take them and receive a percentage grade.",
+      "language": "bilingual",
+      "joystick": false,
+      "controls": []
+    },
+    {
+      "id": "frog",
+      "name": "Frog",
+      "file": "tapes/nir-programs/frog.tzx",
+      "folder": "nir-programs",
+      "category": "game",
+      "description": "Frogger-style game. Guide your frog across the screen while avoiding obstacles.",
+      "language": "english",
+      "joystick": false,
+      "controls": [
+        { "key": "Q", "action": "Move up" },
+        { "key": "P", "action": "Move down" },
+        { "key": "S", "action": "Stop / pause" }
+      ]
+    },
+    {
+      "id": "graph",
+      "name": "Graph",
+      "file": "tapes/nir-programs/graph.tzx",
+      "folder": "nir-programs",
+      "category": "utility",
+      "description": "Graph plotting program. Plot data and mathematical functions on the ZX Spectrum screen.",
+      "language": "bilingual",
+      "joystick": false,
+      "controls": []
+    },
+    {
+      "id": "groan",
+      "name": "Groan",
+      "file": "tapes/nir-programs/groan.tzx",
+      "folder": "nir-programs",
+      "category": "game",
+      "description": "Dice / probability game. Roll dice and accumulate scores — the first player to reach the target wins.",
+      "language": "english",
+      "joystick": false,
+      "controls": []
+    },
+    {
+      "id": "hangman",
+      "name": "Hangman",
+      "file": "tapes/nir-programs/hangman.tzx",
+      "folder": "nir-programs",
+      "category": "game",
+      "description": "Classic word guessing game. One player enters a secret word; the other guesses letters. The gallows fills up with each wrong guess.",
+      "language": "english",
+      "joystick": false,
+      "controls": [
+        { "key": "Letters", "action": "Guess a letter" }
+      ]
+    },
+    {
+      "id": "hebrew",
+      "name": "Hebrew (loader)",
+      "file": "tapes/nir-programs/hebrew.tzx",
+      "folder": "nir-programs",
+      "category": "utility",
+      "description": "Standalone Hebrew character set loader. Installs a custom Hebrew font into RAM for use by other programs.",
+      "language": "english",
+      "joystick": false,
+      "controls": []
+    },
+    {
+      "id": "hex-loader",
+      "name": "Hex Loader",
+      "file": "tapes/nir-programs/hex loader.tzx",
+      "folder": "nir-programs",
+      "category": "utility",
+      "description": "Interactive machine code hex editor. Browse memory by address and enter hex byte values — a developer tool for writing machine code directly on the Spectrum.",
+      "language": "english",
+      "joystick": false,
+      "controls": [
+        { "key": "L", "action": "Load from tape" },
+        { "key": "R", "action": "Run code" },
+        { "key": "J", "action": "Jump to address" },
+        { "key": "Enter", "action": "Increment address" }
+      ]
+    },
+    {
+      "id": "high-score-module",
+      "name": "High Score Module",
+      "file": "tapes/nir-programs/high score module.tzx",
+      "folder": "nir-programs",
+      "category": "utility",
+      "description": "Reusable high score entry screen. Navigate a character picker to enter your name and store the top 10 scores.",
+      "language": "english",
+      "joystick": true,
+      "controls": [
+        { "key": "← →", "action": "Select character" },
+        { "key": "Alt", "action": "Confirm character" }
+      ]
+    },
+    {
+      "id": "horses",
+      "name": "Horses",
+      "file": "tapes/nir-programs/horses.tzx",
+      "folder": "nir-programs",
+      "category": "game",
+      "description": "Horse racing simulation. Ten horses race across the screen at random — watch and cheer for your favourite!",
+      "language": "english",
+      "joystick": false,
+      "controls": [
+        { "key": "Any key", "action": "Advance the race" }
+      ]
+    },
+    {
+      "id": "jot1",
+      "name": "JOT",
+      "file": "tapes/nir-programs/jot1.tzx",
+      "folder": "nir-programs",
+      "category": "educational",
+      "description": "Hebrew vocabulary flashcard trainer (version 1, 372 words). Shows a word and asks if you know the translation — builds vocabulary through spaced repetition.",
+      "language": "bilingual",
+      "joystick": false,
+      "controls": []
+    },
+    {
+      "id": "jot2",
+      "name": "JOT II",
+      "file": "tapes/nir-programs/jot2.tzx",
+      "folder": "nir-programs",
+      "category": "educational",
+      "description": "Hebrew vocabulary flashcard trainer (version 2, 426 words). An improved version of JOT with more words and refined interface.",
+      "language": "bilingual",
+      "joystick": false,
+      "controls": []
+    },
+    {
+      "id": "jot3",
+      "name": "JOT III",
+      "file": "tapes/nir-programs/jot3.tzx",
+      "folder": "nir-programs",
+      "category": "educational",
+      "description": "Hebrew vocabulary flashcard trainer (version 3, 443 words). The most polished version with the largest word list.",
+      "language": "bilingual",
+      "joystick": false,
+      "controls": []
+    },
+    {
+      "id": "mazrek",
+      "name": "Mazrek",
+      "file": "tapes/nir-programs/mazrek.tzx",
+      "folder": "nir-programs",
+      "category": "game",
+      "description": "Target shooting game. An animated target moves on screen — adjust your aim and fire to hit it.",
+      "language": "english",
+      "joystick": false,
+      "controls": [
+        { "key": "6", "action": "Move aim up" },
+        { "key": "7", "action": "Move aim down" },
+        { "key": "Any key", "action": "Fire (at end of shot)" }
+      ]
+    },
+    {
+      "id": "mc-loader",
+      "name": "MC Loader",
+      "file": "tapes/nir-programs/mc loader.tzx",
+      "folder": "nir-programs",
+      "category": "utility",
+      "description": "Machine code editor supporting both hex and decimal input. A developer tool for writing and editing machine code on the Spectrum.",
+      "language": "english",
+      "joystick": false,
+      "controls": [
+        { "key": "#", "action": "Return to menu" }
+      ]
+    },
+    {
+      "id": "microb1",
+      "name": "Microb",
+      "file": "tapes/nir-programs/microb1.tzx",
+      "folder": "nir-programs",
+      "category": "game",
+      "description": "Space shooter game (version 1). Control your ship and defeat the microbe enemy. Uses Kempston joystick — mapped to cursor keys.",
+      "language": "english",
+      "joystick": true,
+      "controls": [
+        { "key": "← → ↑ ↓", "action": "Move ship" },
+        { "key": "Alt", "action": "Fire" }
+      ]
+    },
+    {
+      "id": "microb2",
+      "name": "Microb II",
+      "file": "tapes/nir-programs/microb2.tzx",
+      "folder": "nir-programs",
+      "category": "game",
+      "description": "Space shooter game (version 2). Enhanced version with rounds, energy shield, and more complex enemy AI.",
+      "language": "english",
+      "joystick": true,
+      "controls": [
+        { "key": "← → ↑ ↓", "action": "Move ship" },
+        { "key": "Alt", "action": "Fire" }
+      ]
+    },
+    {
+      "id": "mines",
+      "name": "Mines",
+      "file": "tapes/nir-programs/mines.tzx",
+      "folder": "nir-programs",
+      "category": "game",
+      "description": "Minesweeper-style game. Navigate a grid and avoid the randomly placed mines.",
+      "language": "english",
+      "joystick": false,
+      "controls": []
+    },
+    {
+      "id": "obstacle",
+      "name": "Obstacle",
+      "file": "tapes/nir-programs/obstacle.tzx",
+      "folder": "nir-programs",
+      "category": "game",
+      "description": "Two-player obstacle course game. Both players navigate their pieces through obstacles using the keyboard.",
+      "language": "english",
+      "joystick": false,
+      "controls": [
+        { "key": "1–5", "action": "Player 1 controls" },
+        { "key": "6–0", "action": "Player 2 controls" }
+      ]
+    },
+    {
+      "id": "packman",
+      "name": "Packman",
+      "file": "tapes/nir-programs/packman.tzx",
+      "folder": "nir-programs",
+      "category": "game",
+      "description": "Pac-Man clone. Navigate the maze eating dots while avoiding the ghost. Uses Kempston joystick — mapped to cursor keys.",
+      "language": "english",
+      "joystick": true,
+      "controls": [
+        { "key": "← → ↑ ↓", "action": "Move Pac-Man" },
+        { "key": "Alt", "action": "Fire / action" }
+      ]
+    },
+    {
+      "id": "pangolin",
+      "name": "Pangolin",
+      "file": "tapes/nir-programs/pangolin.tzx",
+      "folder": "nir-programs",
+      "category": "game",
+      "description": "Quiz game — single player version. Answer questions in Hebrew or English.",
+      "language": "bilingual",
+      "joystick": false,
+      "controls": []
+    },
+    {
+      "id": "pangolins",
+      "name": "Pangolins",
+      "file": "tapes/nir-programs/pangolins.tzx",
+      "folder": "nir-programs",
+      "category": "game",
+      "description": "Quiz game — two player version with 100 questions. Answer in Hebrew or English and compete for the highest score.",
+      "language": "bilingual",
+      "joystick": false,
+      "controls": []
+    },
+    {
+      "id": "patpetani1",
+      "name": "Patpetani",
+      "file": "tapes/nir-programs/patpetani1.tzx",
+      "folder": "nir-programs",
+      "category": "educational",
+      "description": "Hebrew conversational program (part 1). Enter your name and have a personalised interactive conversation in Hebrew.",
+      "language": "hebrew",
+      "joystick": false,
+      "controls": []
+    },
+    {
+      "id": "patpetani2",
+      "name": "Patpetani 2",
+      "file": "tapes/nir-programs/patpetani2.tzx",
+      "folder": "nir-programs",
+      "category": "educational",
+      "description": "Hebrew conversational program (part 2). A different script and topic from part 1.",
+      "language": "hebrew",
+      "joystick": false,
+      "controls": []
+    },
+    {
+      "id": "patpetani3",
+      "name": "Patpetani 3",
+      "file": "tapes/nir-programs/patpetani3.tzx",
+      "folder": "nir-programs",
+      "category": "educational",
+      "description": "Hebrew conversational program (part 3). A different script and topic from parts 1 and 2.",
+      "language": "hebrew",
+      "joystick": false,
+      "controls": []
+    },
+    {
+      "id": "patpetani4",
+      "name": "Patpetani 4",
+      "file": "tapes/nir-programs/patpetani4.tzx",
+      "folder": "nir-programs",
+      "category": "educational",
+      "description": "Hebrew conversational program (part 4). The final part of the Patpetani series.",
+      "language": "hebrew",
+      "joystick": false,
+      "controls": []
+    },
+    {
+      "id": "piano",
+      "name": "Piano",
+      "file": "tapes/nir-programs/piano.tzx",
+      "folder": "nir-programs",
+      "category": "utility",
+      "description": "Playable keyboard instrument. Press keys to play musical notes through the Spectrum's speaker.",
+      "language": "english",
+      "joystick": false,
+      "controls": [
+        { "key": "1–9", "action": "Play notes" },
+        { "key": "Shift", "action": "Additional note" },
+        { "key": "Sym Shift (Ctrl)", "action": "Additional note" }
+      ]
+    },
+    {
+      "id": "professor",
+      "name": "Professor",
+      "file": "tapes/nir-programs/professor.tzx",
+      "folder": "nir-programs",
+      "category": "educational",
+      "description": "Educational program with custom sprite graphics.",
+      "language": "english",
+      "joystick": false,
+      "controls": []
+    },
+    {
+      "id": "raiders",
+      "name": "Raiders",
+      "file": "tapes/nir-programs/raiders.tzx",
+      "folder": "nir-programs",
+      "category": "game",
+      "description": "Space Invaders clone. Alien rows march across the screen — shoot them before they reach the bottom. Uses Kempston joystick — mapped to cursor keys.",
+      "language": "english",
+      "joystick": true,
+      "controls": [
+        { "key": "← →", "action": "Move cannon" },
+        { "key": "Alt", "action": "Fire" }
+      ]
+    },
+    {
+      "id": "roadrace",
+      "name": "Road Race",
+      "file": "tapes/nir-programs/roadrace.tzx",
+      "folder": "nir-programs",
+      "category": "game",
+      "description": "Scrolling road racing game. Keep your car on the road as it narrows and speeds up.",
+      "language": "english",
+      "joystick": false,
+      "controls": []
+    },
+    {
+      "id": "scrolling-numbers-backwards",
+      "name": "Scrolling Numbers Backwards",
+      "file": "tapes/nir-programs/scrolling numbers backwards.tzx",
+      "folder": "nir-programs",
+      "category": "utility",
+      "description": "Animated digit-scroll demonstration. Counts down from 99 to 0 with a smooth per-digit rolling animation using custom characters.",
+      "language": "english",
+      "joystick": false,
+      "controls": []
+    },
+    {
+      "id": "scrolling-numbers-forward",
+      "name": "Scrolling Numbers Forward",
+      "file": "tapes/nir-programs/scrolling numbers forward.tzx",
+      "folder": "nir-programs",
+      "category": "utility",
+      "description": "Animated digit-scroll demonstration. Counts up from 0 to 99 with a smooth per-digit rolling animation using custom characters.",
+      "language": "english",
+      "joystick": false,
+      "controls": []
+    },
+    {
+      "id": "simon",
+      "name": "Simon",
+      "file": "tapes/nir-programs/simon.tzx",
+      "folder": "nir-programs",
+      "category": "game",
+      "description": "Simon Says memory game. The computer shows a growing sequence of coloured pads — repeat it back correctly.",
+      "language": "english",
+      "joystick": false,
+      "controls": [
+        { "key": "1–7", "action": "Select coloured pad" },
+        { "key": "1 or 2", "action": "Select difficulty level" }
+      ]
+    },
+    {
+      "id": "soccer",
+      "name": "Soccer",
+      "file": "tapes/nir-programs/soccer.tzx",
+      "folder": "nir-programs",
+      "category": "game",
+      "description": "Two-player soccer game. Each player controls a bat at the bottom of the screen — score goals against your opponent.",
+      "language": "english",
+      "joystick": false,
+      "controls": [
+        { "key": "A", "action": "Player 1: move left" },
+        { "key": "S", "action": "Player 1: move right" },
+        { "key": "L", "action": "Player 2: move left" },
+        { "key": "Enter", "action": "Player 2: move right" }
+      ]
+    },
+    {
+      "id": "statistics",
+      "name": "Statistics",
+      "file": "tapes/nir-programs/statistics.tzx",
+      "folder": "nir-programs",
+      "category": "educational",
+      "description": "Statistics calculator with Hebrew interface. Enter data sets and calculate mean, standard deviation, and frequency distributions.",
+      "language": "bilingual",
+      "joystick": false,
+      "controls": []
+    },
+    {
+      "id": "swimmer",
+      "name": "Swimmer",
+      "file": "tapes/nir-programs/swimmer.tzx",
+      "folder": "nir-programs",
+      "category": "game",
+      "description": "Swimming obstacle game. Guide your swimmer through the pool avoiding obstacles. Uses Kempston joystick — mapped to cursor keys.",
+      "language": "english",
+      "joystick": true,
+      "controls": [
+        { "key": "← → ↑ ↓", "action": "Move swimmer" },
+        { "key": "Alt", "action": "Action / dive" }
+      ]
+    },
+    {
+      "id": "tsolelot",
+      "name": "Tsolelot",
+      "file": "tapes/nir-programs/tsolelot.tzx",
+      "folder": "nir-programs",
+      "category": "game",
+      "description": "Submarines — a Battleship-style game (Hebrew: צוללות). Take turns guessing coordinates on a 10×10 grid to find the hidden submarine.",
+      "language": "hebrew",
+      "joystick": false,
+      "controls": []
+    },
+    {
+      "id": "ufo",
+      "name": "UFO",
+      "file": "tapes/nir-programs/ufo.tzx",
+      "folder": "nir-programs",
+      "category": "game",
+      "description": "UFO arcade game. Uses machine code for fast action. Uses Kempston joystick — mapped to cursor keys.",
+      "language": "english",
+      "joystick": true,
+      "controls": [
+        { "key": "← → ↑ ↓", "action": "Move" },
+        { "key": "Alt", "action": "Fire" }
+      ]
+    },
+    {
+      "id": "wari",
+      "name": "Wari",
+      "file": "tapes/nir-programs/wari.tzx",
+      "folder": "nir-programs",
+      "category": "game",
+      "description": "Wari (Awari / Mancala) — the classic African board game. Play against the computer at two difficulty levels.",
+      "language": "english",
+      "joystick": false,
+      "controls": [
+        { "key": "1–6", "action": "Choose pit to play" },
+        { "key": "1 or 2", "action": "Select difficulty level" }
+      ]
+    },
+    {
+      "id": "word-games",
+      "name": "Word Games",
+      "file": "tapes/nir-programs/word games.tzx",
+      "folder": "nir-programs",
+      "category": "educational",
+      "description": "Word games collection — bilingual Hebrew/English. Multiple word-based challenges using built-in word lists.",
+      "language": "bilingual",
+      "joystick": false,
+      "controls": []
+    },
+    {
+      "id": "wumpus",
+      "name": "Wumpus",
+      "file": "tapes/nir-programs/wumpus.tzx",
+      "folder": "nir-programs",
+      "category": "game",
+      "description": "Hunt the Wumpus — classic text adventure. Navigate a 20-room cave, avoid bats and pits, and slay the Wumpus with your arrows. Fully bilingual Hebrew/English.",
+      "language": "bilingual",
+      "joystick": false,
+      "controls": []
+    },
+    {
+      "id": "air-raid",
+      "name": "Air Raid",
+      "file": "tapes/nir-temp/air raid.tzx",
+      "folder": "nir-temp",
+      "category": "game",
+      "description": "Air raid arcade game (work in progress). Machine code game with custom graphics. Uses Kempston joystick — mapped to cursor keys.",
+      "language": "english",
+      "joystick": true,
+      "controls": [
+        { "key": "← → ↑ ↓", "action": "Move" },
+        { "key": "Alt", "action": "Fire" }
+      ]
+    },
+    {
+      "id": "alch",
+      "name": "Alchemy",
+      "file": "tapes/nir-temp/alch.tzx",
+      "folder": "nir-temp",
+      "category": "game",
+      "description": "Alchemy game (work in progress). A machine code game.",
+      "language": "english",
+      "joystick": false,
+      "controls": []
+    },
+    {
+      "id": "clock",
+      "name": "Clock",
+      "file": "tapes/nir-temp/clock.tzx",
+      "folder": "nir-temp",
+      "category": "utility",
+      "description": "Digital clock display. Runs entirely in machine code for smooth animation.",
+      "language": "english",
+      "joystick": false,
+      "controls": []
+    },
+    {
+      "id": "english-past",
+      "name": "English Past Tense",
+      "file": "tapes/nir-temp/english past.tzx",
+      "folder": "nir-temp",
+      "category": "educational",
+      "description": "English past tense teaching tool — bilingual Hebrew/English. Quizzes on irregular verb past tense forms and tracks your score.",
+      "language": "bilingual",
+      "joystick": false,
+      "controls": []
+    },
+    {
+      "id": "jot2-dev",
+      "name": "JOT II (dev)",
+      "file": "tapes/nir-temp/jot2.tzx",
+      "folder": "nir-temp",
+      "category": "educational",
+      "description": "Hebrew vocabulary flashcard trainer — development copy of JOT II (426 words).",
+      "language": "bilingual",
+      "joystick": false,
+      "controls": []
+    },
+    {
+      "id": "microb3",
+      "name": "Microb III",
+      "file": "tapes/nir-temp/microb3.tzx",
+      "folder": "nir-temp",
+      "category": "game",
+      "description": "Space shooter game (version 3, work in progress). The most advanced version — almost entirely in machine code. Uses Kempston joystick — mapped to cursor keys.",
+      "language": "english",
+      "joystick": true,
+      "controls": [
+        { "key": "← → ↑ ↓", "action": "Move ship" },
+        { "key": "Alt", "action": "Fire" }
+      ]
+    },
+    {
+      "id": "microb3pr",
+      "name": "Microb III (module)",
+      "file": "tapes/nir-temp/microb3pr.tzx",
+      "folder": "nir-temp",
+      "category": "game",
+      "description": "Auxiliary module for Microb III. Uses Kempston joystick — mapped to cursor keys.",
+      "language": "english",
+      "joystick": true,
+      "controls": [
+        { "key": "← → ↑ ↓", "action": "Move" },
+        { "key": "Alt", "action": "Fire" }
+      ]
+    },
+    {
+      "id": "zayad",
+      "name": "Zayad",
+      "file": "tapes/nir-temp/zayad.tzx",
+      "folder": "nir-temp",
+      "category": "game",
+      "description": "Movement game prototype. Navigate a character around the screen.",
+      "language": "english",
+      "joystick": false,
+      "controls": [
+        { "key": "6", "action": "Move left" },
+        { "key": "7", "action": "Move right" },
+        { "key": "8", "action": "Move up" },
+        { "key": "9", "action": "Move down" },
+        { "key": "0", "action": "Sound" }
+      ]
+    }
+  ]
+}

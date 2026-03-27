@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nir's ZX Spectrum Collection</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════ SELECTOR VIEW -->
+  <div id="selector-view">
+    <header>
+      <div class="header-inner">
+        <div class="logo">
+          <span class="logo-zx">ZX</span><span class="logo-spectrum">Spectrum</span>
+        </div>
+        <h1>Nir's Program Collection</h1>
+        <p class="subtitle">57 original programs written in the 1980s — preserved and playable in your browser</p>
+      </div>
+    </header>
+
+    <div class="toolbar">
+      <input type="text" id="search-box" placeholder="Search programs…" autocomplete="off" spellcheck="false">
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="game">Games</button>
+        <button class="filter-btn" data-filter="educational">Educational</button>
+        <button class="filter-btn" data-filter="utility">Utilities</button>
+      </div>
+    </div>
+
+    <main id="program-list">
+      <!-- Populated by app.js -->
+    </main>
+
+    <footer>
+      <p>Programs written on a ZX Spectrum computer · Emulated using <a href="https://github.com/gasman/jsspeccy3" target="_blank" rel="noopener">JSSpeccy3</a></p>
+    </footer>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════ EMULATOR VIEW -->
+  <div id="emulator-view" class="hidden">
+    <div class="emu-header">
+      <button id="back-btn" title="Back to program list">&#9664; Back</button>
+      <div class="emu-title">
+        <span id="emu-program-name"></span>
+        <span id="emu-folder-badge"></span>
+      </div>
+      <button id="fullscreen-btn" title="Toggle fullscreen">&#x26F6;</button>
+    </div>
+
+    <div class="emu-body">
+      <div id="emu-container"></div>
+
+      <div class="emu-sidebar">
+        <div id="controls-panel" class="info-panel hidden">
+          <h3>&#9654; Controls</h3>
+          <div id="controls-list"></div>
+        </div>
+
+        <div id="joystick-panel" class="info-panel joystick-notice hidden">
+          <h3>&#127918; Joystick Emulation</h3>
+          <p>This program was originally played with a <strong>Kempston Joystick</strong>. The joystick has been mapped to your keyboard:</p>
+          <table class="key-table">
+            <tr><td class="key-cell">&#8592; &#8593; &#8595; &#8594;</td><td>Joystick directions</td></tr>
+            <tr><td class="key-cell">Alt</td><td>Fire button</td></tr>
+          </table>
+        </div>
+
+        <div class="info-panel">
+          <h3>&#128196; About</h3>
+          <p id="emu-description"></p>
+        </div>
+
+        <div class="info-panel tips-panel">
+          <h3>&#128161; Tips</h3>
+          <ul>
+            <li>Click the screen first to capture keyboard input</li>
+            <li>Programs load automatically — just wait a few seconds</li>
+            <li>Use the &#9632; Reset button in the emulator menu if anything goes wrong</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="jsspeccy/jsspeccy.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
