@@ -6,6 +6,41 @@ let allPrograms = [];
 let currentFilter = 'all';
 let currentSearch  = '';
 let emuInstance    = null;
+let kempstonState  = 0;
+let joystickActive = false;
+
+// Kempston joystick bit mapping (bit0=right, bit1=left, bit2=down, bit3=up, bit4=fire)
+const KEMPSTON_BITS = {
+  ArrowRight: 0x01,
+  ArrowLeft:  0x02,
+  ArrowDown:  0x04,
+  ArrowUp:    0x08,
+  Alt:        0x10,
+};
+
+function sendKempston(bit, pressed) {
+  if (pressed) kempstonState |=  bit;
+  else         kempstonState &= ~bit;
+  if (emuInstance && joystickActive) {
+    emuInstance.postWorkerMessage({ message: 'setKempstonState', state: kempstonState });
+  }
+}
+
+document.addEventListener('keydown', e => {
+  const bit = KEMPSTON_BITS[e.key];
+  if (bit !== undefined && emuInstance && joystickActive) {
+    sendKempston(bit, true);
+    e.preventDefault();
+  }
+});
+
+document.addEventListener('keyup', e => {
+  const bit = KEMPSTON_BITS[e.key];
+  if (bit !== undefined && emuInstance && joystickActive) {
+    sendKempston(bit, false);
+    e.preventDefault();
+  }
+});
 
 /* ─── Bootstrap ──────────────────────────────────────────────────── */
 document.addEventListener('DOMContentLoaded', () => {
@@ -166,6 +201,10 @@ function launchProgram(id) {
     controlsPanel.classList.add('hidden');
   }
 
+  // Reset joystick state for the new program
+  joystickActive = !!(p.joystick);
+  kempstonState  = 0;
+
   // Destroy any previous emulator instance
   if (emuInstance) {
     try { emuInstance.exit(); } catch(e) {}
@@ -193,6 +232,8 @@ function launchProgram(id) {
 
 /* ─── Exit emulator ──────────────────────────────────────────────── */
 function exitEmulator() {
+  joystickActive = false;
+  kempstonState  = 0;
   if (emuInstance) {
     try { emuInstance.exit(); } catch(e) {}
     emuInstance = null;
