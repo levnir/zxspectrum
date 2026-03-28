@@ -8,6 +8,7 @@
       "category": "utility",
       "description": "Biorhythm calculator. Enter your birth date and a start date to plot your physical (23-day), emotional (28-day) and intellectual (33-day) cycles on screen.",
       "language": "english",
+	  "machine": 128,
       "joystick": false,
       "controls": []
     },
@@ -402,6 +403,7 @@
       "category": "educational",
       "description": "Hebrew conversational program (part 1). Enter your name and have a personalised interactive conversation in Hebrew.",
       "language": "hebrew",
+	  "machine": 128,
       "joystick": false,
       "controls": []
     },
@@ -413,6 +415,7 @@
       "category": "educational",
       "description": "Hebrew conversational program (part 2). A different script and topic from part 1.",
       "language": "hebrew",
+	  "machine": 128,
       "joystick": false,
       "controls": []
     },
@@ -424,6 +427,7 @@
       "category": "educational",
       "description": "Hebrew conversational program (part 3). A different script and topic from parts 1 and 2.",
       "language": "hebrew",
+	  "machine": 128,
       "joystick": false,
       "controls": []
     },
@@ -435,6 +439,7 @@
       "category": "educational",
       "description": "Hebrew conversational program (part 4). The final part of the Patpetani series.",
       "language": "hebrew",
+	  "machine": 128,
       "joystick": false,
       "controls": []
     },
@@ -486,6 +491,7 @@
       "category": "game",
       "description": "Scrolling road racing game. Keep your car on the road as it narrows and speeds up.",
       "language": "english",
+	  "machine": 128,
       "joystick": false,
       "controls": []
     },
