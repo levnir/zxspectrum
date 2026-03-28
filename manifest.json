@@ -475,6 +475,7 @@
         { "key": "X", "action": "Right" },
         { "key": "Enter", "action": "Pick tube" },
         { "key": "Space", "action": "Empty tube" }
+      ]
     },
     {
       "id": "raiders",
