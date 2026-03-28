@@ -15,6 +15,7 @@
       "id": "bomber",
       "name": "Bomber",
       "file": "tapes/nir-programs/bomber.tzx",
+	  "machine": 48,
       "folder": "nir-programs",
       "category": "game",
       "description": "Bomber arcade game. Fly over a city and drop bombs to destroy buildings. To run the program, type R and then Enter.",
