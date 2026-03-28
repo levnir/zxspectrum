@@ -214,17 +214,59 @@ function launchProgram(id) {
   emuContainer.innerHTML = '';
 
   // Start JSSpeccy3
-  emuInstance = JSSpeccy(emuContainer, {
-    machine: p.machine || 128,
-    zoom: 2,
-    autoStart: true,
-    autoLoadTapes: true,
-    tapeAutoLoadMode: 'default',
-    tapeTrapsEnabled: true,
-    openUrl: p.file,
-    sandbox: false,
-    uiEnabled: true
-  });
+  function startEmulator(url) {
+    emuInstance = JSSpeccy(emuContainer, {
+      machine: p.machine || 128,
+      zoom: 2,
+      autoStart: true,
+      autoLoadTapes: true,
+      tapeAutoLoadMode: 'default',
+      tapeTrapsEnabled: true,
+      openUrl: url,
+      sandbox: false,
+      uiEnabled: true
+    });
+  }
+
+  if (p.autorun === false) {
+    // Fetch TZX, patch LINE field to 0x8000 to suppress BASIC autostart
+    fetch(p.file)
+      .then(r => r.arrayBuffer())
+      .then(buf => {
+        const data = new Uint8Array(buf);
+        let i = 10;
+        while (i < data.length) {
+          const blockType = data[i];
+          if (blockType === 0x10) {
+            const blockLen = data[i+3] | (data[i+4] << 8);
+            const flag = data[i+5];
+            const hdrType = data[i+6];
+            if (flag === 0x00 && hdrType === 0x00) {
+              // BASIC program header: LINE is at offset 19-20 from block start
+              data[i+19] = 0x00;  // LINE low byte
+              data[i+20] = 0x80;  // LINE high byte = 0x8000 (no autostart)
+              // Recalculate checksum (XOR of bytes i+5 .. i+22)
+              let chk = 0;
+              for (let j = i+5; j <= i+22; j++) chk ^= data[j];
+              data[i+23] = chk;
+            }
+            i += 5 + blockLen;
+          } else if (blockType === 0x11) {
+            const blockLen = (data[i+15] | (data[i+16] << 8) | (data[i+17] << 16));
+            i += 18 + blockLen;
+          } else if (blockType === 0x20) { i += 3;
+          } else if (blockType === 0x30) { i += 2 + data[i+1];
+          } else if (blockType === 0x32) { i += 3 + (data[i+1] | (data[i+2] << 8));
+          } else if (blockType === 0x5A) { i += 10;
+          } else break;
+        }
+        const blob = new Blob([data], {type: 'application/octet-stream'});
+        const blobUrl = URL.createObjectURL(blob);
+        startEmulator(blobUrl);
+      });
+  } else {
+    startEmulator(p.file);
+  }
 
   // Scroll to top on mobile
   window.scrollTo(0, 0);
