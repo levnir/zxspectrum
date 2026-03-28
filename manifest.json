@@ -548,14 +548,15 @@
       "file": "tapes/nir-programs/soccer.tzx",
       "folder": "nir-programs",
       "category": "game",
-      "description": "Two-player soccer game. Each player controls a bat at the bottom of the screen — score goals against your opponent.",
+      "description": "Two-player soccer game. Each player controls a bat — score goals against your opponent. To start the game, press one of the movement keys of the corresponding player.",
       "language": "english",
       "joystick": false,
       "controls": [
         { "key": "A", "action": "Player 1: move left" },
         { "key": "S", "action": "Player 1: move right" },
-        { "key": "L", "action": "Player 2: move left" },
-        { "key": "Enter", "action": "Player 2: move right" }
+        { "key": "J", "action": "Player 2: move left" },
+        { "key": "K", "action": "Player 2: move right" },
+        { "key": "H", "action": "Pause / Resume" }
       ]
     },
     {
