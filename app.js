@@ -215,7 +215,7 @@ function launchProgram(id) {
 
   // Start JSSpeccy3
   emuInstance = JSSpeccy(emuContainer, {
-    machine: 128,
+    machine: p.machine || 128,
     zoom: 2,
     autoStart: true,
     autoLoadTapes: true,
