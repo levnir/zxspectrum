@@ -216,7 +216,7 @@ function launchProgram(id) {
   // Start JSSpeccy3
   function startEmulator(url) {
     const opts = {
-      machine: p.machine || 128,
+      machine: p.machine || 48,
       zoom: 2,
       autoStart: true,
       autoLoadTapes: true,
