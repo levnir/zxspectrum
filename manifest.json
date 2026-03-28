@@ -353,6 +353,7 @@
       "category": "game",
       "description": "Two-player obstacle course game. Both players navigate their pieces through obstacles using the keyboard.",
       "language": "english",
+	  "machine": 128,
       "joystick": false,
       "controls": [
         { "key": "1–5", "action": "Player 1 controls" },
@@ -381,6 +382,7 @@
       "category": "game",
       "description": "Quiz game — single player version. Answer questions in Hebrew or English.",
       "language": "bilingual",
+	  "machine": 128,
       "joystick": false,
       "controls": []
     },
@@ -466,6 +468,7 @@
       "category": "educational",
       "description": "Educational program with custom sprite graphics.",
       "language": "english",
+	  "machine": 128,
       "joystick": false,
       "controls": []
     },
@@ -586,6 +589,7 @@
       "category": "game",
       "description": "Submarines — a Battleship-style game (Hebrew: צוללות). Take turns guessing coordinates on a 10×10 grid to find the hidden submarine.",
       "language": "hebrew",
+	  "machine": 128,
       "joystick": false,
       "controls": []
     },
