@@ -493,7 +493,10 @@
       "language": "english",
 	  "machine": 128,
       "joystick": false,
-      "controls": []
+      "controls": [
+        { "key": "Q", "action": "Left" },
+        { "key": "P", "action": "Right" }
+      ]
     },
     {
       "id": "scrolling-numbers-backwards",
