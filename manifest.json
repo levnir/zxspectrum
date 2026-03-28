@@ -53,6 +53,8 @@
         { "key": "6", "action": "Move cursor down" },
         { "key": "7", "action": "Move cursor up" },
         { "key": "8", "action": "Move cursor right" },
+        { "key": "9", "action": "Set square to white" },
+        { "key": "0", "action": "Set square to black" },
         { "key": "C", "action": "Load a character" },
         { "key": "R", "action": "Ready / finish" }
       ]
