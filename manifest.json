@@ -113,11 +113,14 @@
       "file": "tapes/nir-programs/duck.tzx",
       "folder": "nir-programs",
       "category": "game",
-      "description": "Duck shooting gallery. Ducks move across the screen — shoot them to reach the target score you set at the start.",
+      "description": "Duck eating fish and trying to survive the fire. Make sure to eat the fish in order to have the strengh to fly. But do not stay for too long underwater since you must also breath.",
       "language": "english",
       "joystick": false,
       "controls": [
-        { "key": "Any key", "action": "Shoot" }
+        { "key": "A", "action": "Fly / Move up" },
+        { "key": "S", "action": "Dive / Move down" },
+        { "key": "H", "action": "Left" },
+        { "key": "J", "action": "Right" }
       ]
     },
     {
