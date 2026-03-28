@@ -311,6 +311,7 @@
       "category": "game",
       "description": "Space shooter game (version 1). Control your ship and defeat the microbe enemy. Uses Kempston joystick — mapped to cursor keys.",
       "language": "english",
+	  "machine": 48,
       "joystick": true,
       "controls": [
         { "key": "← → ↑ ↓", "action": "Move ship" },
@@ -325,6 +326,7 @@
       "category": "game",
       "description": "Space shooter game (version 2). Enhanced version with rounds, energy shield, and more complex enemy AI.",
       "language": "english",
+	  "machine": 48,
       "joystick": true,
       "controls": [
         { "key": "← → ↑ ↓", "action": "Move ship" },
