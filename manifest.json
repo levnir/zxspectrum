@@ -146,7 +146,8 @@
       "controls": [
         { "key": "Q", "action": "Move up" },
         { "key": "P", "action": "Move down" },
-        { "key": "S", "action": "Stop / pause" }
+        { "key": "S", "action": "Stop / Pause" },
+        { "key": "C", "action": "Continue" }
       ]
     },
     {
