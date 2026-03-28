@@ -15,11 +15,11 @@
       "id": "bomber",
       "name": "Bomber",
       "file": "tapes/nir-programs/bomber.tzx",
-	  "machine": 48,
       "folder": "nir-programs",
       "category": "game",
       "description": "Bomber arcade game. Fly over a city and drop bombs to destroy buildings. To run the program, type R and then Enter.",
       "language": "english",
+	  "machine": 48,
       "joystick": false,
       "controls": [
         { "key": "0", "action": "Drop bomb" }
@@ -228,8 +228,9 @@
       "file": "tapes/nir-programs/horses.tzx",
       "folder": "nir-programs",
       "category": "game",
-      "description": "Horse racing simulation. Ten horses race across the screen at random — watch and cheer for your favourite!",
+      "description": "Horse racing simulation. Ten horses race across the screen at random — watch and cheer for your favourite! To run the program, type R and then Enter.",
       "language": "english",
+	  "machine": 48,
       "joystick": false,
       "controls": [
         { "key": "Any key", "action": "Advance the race" }
