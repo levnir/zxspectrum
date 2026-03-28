@@ -17,7 +17,7 @@
       "file": "tapes/nir-programs/bomber.tzx",
       "folder": "nir-programs",
       "category": "game",
-      "description": "Bomber arcade game. Fly over a city and drop bombs to destroy buildings. R + Enter to run.",
+      "description": "Bomber arcade game. Fly over a city and drop bombs to destroy buildings. To run the program, type R and then Enter.",
       "language": "english",
       "joystick": false,
       "controls": [
@@ -30,10 +30,14 @@
       "file": "tapes/nir-programs/bul pghya.tzx",
       "folder": "nir-programs",
       "category": "game",
-      "description": "Bulls and Cows number guessing game (Hebrew: בול פגיעה = Direct Hit). The computer picks a secret 4 color code; you guess and are told how many colors are correct. Use 5,8 to move the cursor and Enter to choose the color.",
+      "description": "Bulls and Cows number guessing game (Hebrew: בול פגיעה = Direct Hit). The computer picks a secret 4 color code; you guess and are told how many colors are correct.",
       "language": "bilingual",
       "joystick": false,
-      "controls": []
+      "controls": [
+        { "key": "5", "action": "Move cursor left" },
+        { "key": "8", "action": "Move cursor right" },
+        { "key": "Enter", "action": "Choose the color" }
+      ]
     },
     {
       "id": "char-editor",
