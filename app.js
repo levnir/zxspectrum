@@ -215,17 +215,18 @@ function launchProgram(id) {
 
   // Start JSSpeccy3
   function startEmulator(url) {
-    emuInstance = JSSpeccy(emuContainer, {
+    const opts = {
       machine: p.machine || 128,
       zoom: 2,
       autoStart: true,
       autoLoadTapes: true,
       tapeAutoLoadMode: 'default',
       tapeTrapsEnabled: true,
-      openUrl: url,
       sandbox: false,
       uiEnabled: true
-    });
+    };
+    if (url) opts.openUrl = url;
+    emuInstance = JSSpeccy(emuContainer, opts);
   }
 
   if (p.autorun === false) {
@@ -260,9 +261,9 @@ function launchProgram(id) {
           } else if (blockType === 0x5A) { i += 10;
           } else break;
         }
-        const blob = new Blob([data], {type: 'application/octet-stream'});
-        const blobUrl = URL.createObjectURL(blob);
-        startEmulator(blobUrl);
+        const file = new File([data], 'program.tzx', {type: 'application/octet-stream'});
+        startEmulator(null);
+        emuInstance.onReady(() => emuInstance.openFile(file));
       });
   } else {
     startEmulator(p.file);
