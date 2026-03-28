@@ -550,10 +550,13 @@
       "category": "game",
       "description": "Swimming obstacle game. Guide your swimmer through the pool avoiding obstacles. Uses Kempston joystick — mapped to cursor keys.",
       "language": "english",
-      "joystick": true,
+      "joystick": false,
       "controls": [
-        { "key": "← → ↑ ↓", "action": "Move swimmer" },
-        { "key": "Alt", "action": "Action / dive" }
+        { "key": "Q", "action": "Jump into water" },
+        { "key": "I", "action": "Swim to the left" },
+        { "key": "P", "action": "Swim to the right" },
+        { "key": "Z", "action": "Dive" },
+        { "key": "O", "action": "Pause / Resume" }
       ]
     },
     {
