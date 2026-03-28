@@ -156,9 +156,10 @@
       "file": "tapes/nir-programs/graph.tzx",
       "folder": "nir-programs",
       "category": "utility",
-      "description": "Graph plotting program. Plot the graph of a mathematical function on the ZX Spectrum screen. You need to input the function manually in the basic code in lines 200-999 before running the program.",
+      "description": "Graph plotting program. Plot the graph of a mathematical function on the ZX Spectrum screen. You need to input the function manually in the BASIC code in lines 200-999 before running the program.",
       "language": "bilingual",
 	  "machine": 48,
+      "autorun": false,
       "joystick": false,
       "controls": []
     },
