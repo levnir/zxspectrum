@@ -719,7 +719,7 @@
       "file": "tapes/nir-temp/microb3.tzx",
       "folder": "nir-temp",
       "category": "game",
-      "description": "Space shooter game (version 3, work in progress). The most advanced version — almost entirely in machine code. Uses Kempston joystick — mapped to cursor keys.",
+      "description": "Microb game (version 3, work in progress). The most advanced version — almost entirely in machine code. Uses Kempston joystick — mapped to cursor keys.",
       "language": "english",
       "joystick": true,
       "controls": [
@@ -747,7 +747,7 @@
       "file": "tapes/nir-temp/zayad.tzx",
       "folder": "nir-temp",
       "category": "game",
-      "description": "Movement game prototype. Navigate a character around the screen.",
+      "description": "Hunter game prototype (Hebrew: צייד). Aim and fire a gun in the forest.",
       "language": "english",
       "joystick": false,
       "controls": [
