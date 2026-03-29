@@ -310,13 +310,13 @@
       "file": "tapes/nir-programs/microb1.tzx",
       "folder": "nir-programs",
       "category": "game",
-      "description": "Space shooter game (version 1). Control your ship and defeat the microbe enemy. Uses Kempston joystick — mapped to cursor keys.",
+      "description": "You control a tooth microb that creates holes in teeth while avoiding the toothbrush.",
       "language": "english",
 	  "machine": 48,
       "joystick": true,
       "controls": [
-        { "key": "← → ↑ ↓", "action": "Move ship" },
-        { "key": "Alt", "action": "Fire" }
+        { "key": "← → ↑ ↓", "action": "Move microb." },
+        { "key": "Alt", "action": "Create hole in tooth." }
       ]
     },
     {
@@ -576,7 +576,7 @@
       "file": "tapes/nir-programs/swimmer.tzx",
       "folder": "nir-programs",
       "category": "game",
-      "description": "Swimming obstacle game. Guide your swimmer through the pool avoiding obstacles. Uses Kempston joystick — mapped to cursor keys.",
+      "description": "Swimmer must jump into water and swim to land while avoiding the shark.",
       "language": "english",
       "joystick": false,
       "controls": [
