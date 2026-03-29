@@ -383,7 +383,7 @@
       "file": "tapes/nir-programs/pangolin.tzx",
       "folder": "nir-programs",
       "category": "game",
-      "description": "Quiz game — single player version. Answer questions in Hebrew or English.",
+      "description": "Animal quiz game — you think of an animal and the computer tries to guess it by asking questions. You may also teach the computer about new animals.",
       "language": "bilingual",
 	  "machine": 128,
       "joystick": false,
