@@ -315,7 +315,7 @@
 	  "machine": 48,
       "joystick": true,
       "controls": [
-        { "key": "← → ↑ ↓", "action": "Move microb." },
+        { "key": "← → ↑ ↓", "action": "Move the microb." },
         { "key": "Alt", "action": "Create hole in tooth." }
       ]
     },
@@ -325,13 +325,16 @@
       "file": "tapes/nir-programs/microb2.tzx",
       "folder": "nir-programs",
       "category": "game",
-      "description": "Space shooter game (version 2). Enhanced version with rounds, energy shield, and more complex enemy AI.",
+      "description": "You control a tooth microb that tries to form as much plaque on the teeth as possible. The microb must catch and eat food remains in order to be able to form the plaque.",
       "language": "english",
 	  "machine": 48,
       "joystick": true,
       "controls": [
-        { "key": "← → ↑ ↓", "action": "Move ship" },
-        { "key": "Alt", "action": "Fire" }
+        { "key": "← →", "action": "Move left/right." },
+        { "key": "↓", "action": "Form plaque." },
+        { "key": "Alt", "action": "Jump up." },
+        { "key": "Alt + ←", "action": "Jump left." },
+        { "key": "Alt + →", "action": "Jump right." }
       ]
     },
     {
