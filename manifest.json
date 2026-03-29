@@ -18,7 +18,7 @@
       "file": "tapes/nir-programs/bomber.tzx",
       "folder": "nir-programs",
       "category": "game",
-      "description": "Bomber arcade game. Fly over a city and drop bombs to destroy buildings. To run the program, type R and then Enter.",
+      "description": "Bomber arcade game. Fly over a city and drop bombs to destroy buildings.",
       "language": "english",
 	  "machine": 48,
       "joystick": false,
@@ -282,7 +282,7 @@
       "file": "tapes/nir-programs/mazrek.tzx",
       "folder": "nir-programs",
       "category": "game",
-      "description": "Syringe (Hebrew: מזרק). The goal of the game is to give a playful injection on the bum. To run the program, type R and then Enter.",
+      "description": "Syringe (Hebrew: מזרק). The goal of the game is to give a playful injection on the bum.",
       "language": "english",
       "joystick": false,
       "controls": [
