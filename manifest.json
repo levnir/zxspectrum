@@ -282,12 +282,12 @@
       "file": "tapes/nir-programs/mazrek.tzx",
       "folder": "nir-programs",
       "category": "game",
-      "description": "Target shooting game. An animated target moves on screen — adjust your aim and fire to hit it.",
+      "description": "Syringe (Hebrew: מזרק). The goal of the game is to give a playful injection on the bum. To run the program, type R and then Enter.",
       "language": "english",
       "joystick": false,
       "controls": [
-        { "key": "6", "action": "Move aim up" },
-        { "key": "7", "action": "Move aim down" },
+        { "key": "6", "action": "Move aim down" },
+        { "key": "7", "action": "Move aim up" },
         { "key": "Any key", "action": "Fire (at end of shot)" }
       ]
     },
@@ -316,7 +316,7 @@
       "joystick": true,
       "controls": [
         { "key": "← → ↑ ↓", "action": "Move the microb." },
-        { "key": "Alt", "action": "Create hole in tooth." }
+        { "key": "Alt", "action": "Create holes in teeth." }
       ]
     },
     {
