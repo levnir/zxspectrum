@@ -608,12 +608,15 @@
       "file": "tapes/nir-programs/ufo.tzx",
       "folder": "nir-programs",
       "category": "game",
-      "description": "UFO arcade game. Uses machine code for fast action. Uses Kempston joystick — mapped to cursor keys.",
+      "description": "UFO arcade game. Fly over a city and drop bombs to destroy buildings. Uses machine code for fast action.",
       "language": "english",
-      "joystick": true,
+      "joystick": false,
       "controls": [
-        { "key": "← → ↑ ↓", "action": "Move" },
-        { "key": "Alt", "action": "Fire" }
+        { "key": "0", "action": "Fire" },
+        { "key": "7", "action": "Up" },
+        { "key": "H", "action": "Hold" },
+        { "key": "S", "action": "Restart" },
+        { "key": "A", "action": "Abort" }
       ]
     },
     {
