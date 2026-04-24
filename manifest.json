@@ -69,6 +69,7 @@
       "category": "utility",
       "description": "Decision-making aid (Hebrew interface). Enter options and criteria, assign weights and scores, and the program calculates the best choice.",
       "language": "bilingual",
+      "autorun": true,
       "joystick": false,
       "controls": []
     },
