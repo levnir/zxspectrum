@@ -9,6 +9,7 @@
       "description": "Biorhythm calculator. Enter your birth date and a start date to plot your physical (23-day), emotional (28-day) and intellectual (33-day) cycles on screen.",
       "language": "english",
 	  "machine": 128,
+      "autorun": true,
       "joystick": false,
       "controls": []
     },
@@ -21,6 +22,7 @@
       "description": "Bomber arcade game. Fly over a city and drop bombs to destroy buildings.",
       "language": "english",
 	  "machine": 48,
+      "autorun": false,
       "joystick": false,
       "controls": [
         { "key": "0", "action": "Drop bomb" }
@@ -32,8 +34,9 @@
       "file": "tapes/nir-programs/bul pghya.tzx",
       "folder": "nir-programs",
       "category": "game",
-      "description": "Bulls and Cows number guessing game (Hebrew: בול פגיעה = Direct Hit). The computer picks a secret 4 color code; you guess and are told how many colors are correct.",
+      "description": "Bulls and Cows number guessing game (Hebrew: בול פגיעה). The computer picks a secret 4 color code; you guess and are told how many colors are correct.",
       "language": "bilingual",
+      "autorun": true,
       "joystick": false,
       "controls": [
         { "key": "5", "action": "Move cursor left" },
@@ -49,6 +52,7 @@
       "category": "utility",
       "description": "UDG (User Defined Graphics) character editor. Design custom 8×8 pixel characters using an on-screen grid.",
       "language": "english",
+      "autorun": false,
       "joystick": false,
       "controls": [
         { "key": "5", "action": "Move cursor left" },
@@ -106,6 +110,8 @@
       "category": "utility",
       "description": "Screen layout design tool. Define boundaries (lines and tabs) and draw content within them — used for designing screen templates.",
       "language": "english",
+	  "machine": 48,
+      "autorun": false,
       "joystick": false,
       "controls": []
     },
@@ -290,8 +296,7 @@
       "joystick": false,
       "controls": [
         { "key": "6", "action": "Move aim down" },
-        { "key": "7", "action": "Move aim up" },
-        { "key": "Any key", "action": "Fire (at end of shot)" }
+        { "key": "7", "action": "Move aim up" }
       ]
     },
     {
@@ -316,6 +321,7 @@
       "description": "You control a tooth microb that creates holes in teeth while avoiding the toothbrush.",
       "language": "english",
 	  "machine": 48,
+      "autorun": true,
       "joystick": true,
       "controls": [
         { "key": "← → ↑ ↓", "action": "Move the microb." },
@@ -331,6 +337,7 @@
       "description": "You control a tooth microb that tries to form as much plaque on the teeth as possible. The microb must catch and eat food remains in order to be able to form the plaque.",
       "language": "english",
 	  "machine": 48,
+      "autorun": true,
       "joystick": true,
       "controls": [
         { "key": "← →", "action": "Move left/right." },
@@ -346,10 +353,15 @@
       "file": "tapes/nir-programs/mines.tzx",
       "folder": "nir-programs",
       "category": "game",
-      "description": "Minesweeper-style game. Navigate a grid and avoid the randomly placed mines.",
+      "description": "Mines arcade game. Navigate and try to capture the enemy while avoiding the randomly placed mines.",
       "language": "english",
       "joystick": false,
-      "controls": []
+      "controls": [
+        { "key": "5", "action": "Move left" },
+        { "key": "6", "action": "Move down" },
+        { "key": "7", "action": "Move up" },
+        { "key": "8", "action": "Move right" }
+      ]
     },
     {
       "id": "obstacle",
@@ -359,7 +371,9 @@
       "category": "game",
       "description": "Two-player obstacle course game. Both players navigate their pieces through obstacles using the keyboard.",
       "language": "english",
-	  "machine": 128,
+	  "machine": 48,
+      "autorun": false,
+      "autoload": false,
       "joystick": false,
       "controls": [
         { "key": "1–5", "action": "Player 1 controls" },
