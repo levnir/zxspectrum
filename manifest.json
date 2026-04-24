@@ -474,7 +474,7 @@
       "category": "game",
       "description": "Professor must save the world from exploding by finding the right combination of chemicals in the tubes.",
       "language": "english",
-	  "machine": 128,
+	  "machine": 48,
       "joystick": false,
       "controls": [
         { "key": "Z", "action": "Left" },
