@@ -229,7 +229,7 @@ function launchProgram(id) {
     emuInstance = JSSpeccy(emuContainer, opts);
   }
 
-  if (p.autorun === false) {
+  if (p.autorun !== true) {
     // Fetch TZX, patch LINE field to 0x8000 to suppress BASIC autostart
     fetch(p.file)
       .then(r => r.arrayBuffer())
