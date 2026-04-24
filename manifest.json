@@ -376,8 +376,14 @@
       "autoload": false,
       "joystick": false,
       "controls": [
-        { "key": "1–5", "action": "Player 1 controls" },
-        { "key": "6–0", "action": "Player 2 controls" }
+        { "key": "A", "action": "Player 1 move left" },
+        { "key": "D", "action": "Player 1 move right" },
+        { "key": "W", "action": "Player 1 move up" },
+        { "key": "S", "action": "Player 1 move down" },
+        { "key": "J", "action": "Player 2 move left" },
+        { "key": "L", "action": "Player 2 move right" },
+        { "key": "I", "action": "Player 2 move up" },
+        { "key": "K", "action": "Player 2 move down" }
       ]
     },
     {
