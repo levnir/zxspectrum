@@ -133,6 +133,7 @@
       "category": "educational",
       "description": "Quiz and exam engine with Hebrew interface. Teacher mode to create quizzes; student mode to take them and receive a percentage grade.",
       "language": "bilingual",
+      "autorun": true,
       "joystick": false,
       "controls": []
     },
