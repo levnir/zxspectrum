@@ -116,6 +116,7 @@
       "category": "game",
       "description": "Duck eating fish and trying to survive the fire. Make sure to eat the fish in order to have the strengh to fly. But do not stay for too long underwater since you must also breath.",
       "language": "english",
+      "autorun": true,
       "joystick": false,
       "controls": [
         { "key": "A", "action": "Fly / Move up" },
