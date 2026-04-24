@@ -219,7 +219,7 @@ function launchProgram(id) {
       machine: p.machine || 48,
       zoom: 2,
       autoStart: true,
-      autoLoadTapes: true,
+      autoLoadTapes: p.autoload !== false,
       tapeAutoLoadMode: 'default',
       tapeTrapsEnabled: true,
       sandbox: false,
