@@ -8,8 +8,9 @@
       "category": "utility",
       "description": "Biorhythm calculator. Enter your birth date and a start date to plot your physical (23-day), emotional (28-day) and intellectual (33-day) cycles on screen.",
       "language": "english",
-	  "machine": 128,
-      "autorun": true,
+	  "machine": 48,
+      "autorun": false,
+      "autoload": false,
       "joystick": false,
       "controls": []
     },
@@ -53,6 +54,7 @@
       "description": "UDG (User Defined Graphics) character editor. Design custom 8×8 pixel characters using an on-screen grid.",
       "language": "english",
       "autorun": false,
+      "autoload": false,
       "joystick": false,
       "controls": [
         { "key": "5", "action": "Move cursor left" },
@@ -61,8 +63,7 @@
         { "key": "8", "action": "Move cursor right" },
         { "key": "9", "action": "Set square to white" },
         { "key": "0", "action": "Set square to black" },
-        { "key": "C", "action": "Load a character" },
-        { "key": "R", "action": "Ready / finish" }
+        { "key": "Enter", "action": "Finished" }
       ]
     },
     {
@@ -192,6 +193,8 @@
       "category": "game",
       "description": "Classic word guessing game. One player enters a secret word; the other guesses letters. The gallows fills up with each wrong guess.",
       "language": "english",
+      "autorun": false,
+      "autoload": false,
       "joystick": false,
       "controls": [
         { "key": "Letters", "action": "Guess a letter" }
@@ -214,8 +217,10 @@
       "file": "tapes/nir-programs/hex loader.tzx",
       "folder": "nir-programs",
       "category": "utility",
-      "description": "Interactive machine code hex editor. Browse memory by address and enter hex byte values — a developer tool for writing machine code directly on the Spectrum.",
+      "description": "Interactive machine code hex editor. Browse memory by address and enter hex byte values — a developer tool for writing machine code directly on the Spectrum. The valid address range is from 16384 to 65535.",
       "language": "english",
+      "autorun": false,
+      "autoload": false,
       "joystick": false,
       "controls": [
         { "key": "L", "action": "Load from tape" },
@@ -260,6 +265,8 @@
       "category": "educational",
       "description": "Hebrew vocabulary flashcard trainer (version 1, 372 words). Shows a word and asks if you know the translation — builds vocabulary through spaced repetition.",
       "language": "bilingual",
+      "autorun": false,
+      "autoload": false,
       "joystick": false,
       "controls": []
     },
@@ -394,6 +401,8 @@
       "category": "game",
       "description": "Pac-Man clone. Navigate the maze eating dots while avoiding the ghost. Uses Kempston joystick — mapped to cursor keys.",
       "language": "english",
+      "autorun": false,
+      "autoload": false,
       "joystick": true,
       "controls": [
         { "key": "← → ↑ ↓", "action": "Move Pac-Man" },
@@ -408,7 +417,9 @@
       "category": "game",
       "description": "Animal quiz game — you think of an animal and the computer tries to guess it by asking questions. You may also teach the computer about new animals.",
       "language": "bilingual",
-	  "machine": 128,
+	  "machine": 48,
+      "autorun": false,
+      "autoload": false,
       "joystick": false,
       "controls": []
     },
@@ -418,8 +429,10 @@
       "file": "tapes/nir-programs/pangolins.tzx",
       "folder": "nir-programs",
       "category": "game",
-      "description": "Quiz game — two player version with 100 questions. Answer in Hebrew or English and compete for the highest score.",
+      "description": "Animal quiz game, v2. Seems like a more polished version with better Hebrew support.",
       "language": "bilingual",
+      "autorun": false,
+      "autoload": false,
       "joystick": false,
       "controls": []
     },
@@ -485,9 +498,10 @@
       "language": "english",
       "joystick": false,
       "controls": [
-        { "key": "1–9", "action": "Play notes" },
-        { "key": "Shift", "action": "Additional note" },
-        { "key": "Sym Shift (Ctrl)", "action": "Additional note" }
+        { "key": "Shift", "action": "CS key (caps shift)" },
+        { "key": "Ctrl", "action": "SML key (symbol shift)" },
+        { "key": "Space", "action": "SPC key (space)" },
+        { "key": "Enter", "action": "ENT key (enter)" }
       ]
     },
     {
@@ -498,7 +512,9 @@
       "category": "game",
       "description": "Professor must save the world from exploding by finding the right combination of chemicals in the tubes.",
       "language": "english",
-	  "machine": 128,
+	  "machine": 48,
+      "autorun": false,
+      "autoload": false,
       "joystick": false,
       "autorun": true,
       "controls": [
@@ -516,6 +532,9 @@
       "category": "game",
       "description": "Space Invaders clone. Alien rows march across the screen — shoot them before they reach the bottom. Uses Kempston joystick — mapped to cursor keys.",
       "language": "english",
+	  "machine": 128,
+      "autorun": true,
+      "autoload": true,
       "joystick": true,
       "controls": [
         { "key": "← →", "action": "Move cannon" },
@@ -531,6 +550,8 @@
       "description": "Scrolling road racing game. Keep your car on the road as it narrows and speeds up.",
       "language": "english",
 	  "machine": 128,
+      "autorun": true,
+      "autoload": true,
       "joystick": false,
       "controls": [
         { "key": "Q", "action": "Left" },
@@ -545,6 +566,8 @@
       "category": "utility",
       "description": "Animated digit-scroll demonstration. Counts down from 99 to 0 with a smooth per-digit rolling animation using custom characters.",
       "language": "english",
+      "autorun": false,
+      "autoload": false,
       "joystick": false,
       "controls": []
     },
@@ -556,6 +579,8 @@
       "category": "utility",
       "description": "Animated digit-scroll demonstration. Counts up from 0 to 99 with a smooth per-digit rolling animation using custom characters.",
       "language": "english",
+      "autorun": false,
+      "autoload": false,
       "joystick": false,
       "controls": []
     },
@@ -567,11 +592,9 @@
       "category": "game",
       "description": "Simon Says memory game. The computer shows a growing sequence of coloured pads — repeat it back correctly.",
       "language": "english",
+      "autorun": false,
       "joystick": false,
-      "controls": [
-        { "key": "1–7", "action": "Select coloured pad" },
-        { "key": "1 or 2", "action": "Select difficulty level" }
-      ]
+      "controls": []
     },
     {
       "id": "soccer",
@@ -582,6 +605,7 @@
       "description": "Two-player soccer game. Each player controls a bat — score goals against your opponent. To start the game, press one of the movement keys of the corresponding player.",
       "language": "english",
       "joystick": false,
+      "autorun": false,
       "controls": [
         { "key": "A", "action": "Player 1: move left" },
         { "key": "S", "action": "Player 1: move right" },
@@ -598,6 +622,8 @@
       "category": "educational",
       "description": "Statistics calculator with Hebrew interface. Enter data sets and calculate mean, standard deviation, and frequency distributions.",
       "language": "bilingual",
+      "autoload": true,
+      "autorun": true,
       "joystick": false,
       "controls": []
     },
@@ -609,6 +635,8 @@
       "category": "game",
       "description": "Swimmer must jump into water and swim to land while avoiding the shark.",
       "language": "english",
+      "autoload": true,
+      "autorun": true,
       "joystick": false,
       "controls": [
         { "key": "Q", "action": "Jump into water" },
@@ -626,7 +654,9 @@
       "category": "game",
       "description": "Submarines — a Battleship-style game (Hebrew: צוללות). Take turns guessing coordinates on a 10×10 grid to find the hidden submarine.",
       "language": "hebrew",
-	  "machine": 128,
+	  "machine": 48,
+      "autoload": false,
+      "autorun": false,
       "joystick": false,
       "controls": []
     },
@@ -638,6 +668,8 @@
       "category": "game",
       "description": "UFO arcade game. Fly over a city and drop bombs to destroy buildings. Uses machine code for fast action.",
       "language": "english",
+      "autoload": true,
+      "autorun": true,
       "joystick": false,
       "controls": [
         { "key": "0", "action": "Fire" },
@@ -669,6 +701,7 @@
       "category": "educational",
       "description": "Word games collection — bilingual Hebrew/English. Multiple word-based challenges using built-in word lists.",
       "language": "bilingual",
+      "autoload": false,
       "joystick": false,
       "controls": []
     },
@@ -678,8 +711,9 @@
       "file": "tapes/nir-programs/wumpus.tzx",
       "folder": "nir-programs",
       "category": "game",
-      "description": "Hunt the Wumpus — classic text adventure. Navigate a 20-room cave, avoid bats and pits, and slay the Wumpus with your arrows. Fully bilingual Hebrew/English.",
+      "description": "Hunt the Wumpus — classic text adventure. Navigate a 20-room cave, avoid bats and pits, and slay the Wumpus with your arrows.",
       "language": "bilingual",
+      "autorun": true,
       "joystick": false,
       "controls": []
     },
@@ -691,6 +725,8 @@
       "category": "game",
       "description": "Air raid arcade game (work in progress). Machine code game with custom graphics. Uses Kempston joystick — mapped to cursor keys.",
       "language": "english",
+      "autoload": true,
+      "autorun": true,
       "joystick": true,
       "controls": [
         { "key": "← → ↑ ↓", "action": "Move" },
@@ -705,6 +741,8 @@
       "category": "game",
       "description": "Alchemy game (work in progress). A machine code game.",
       "language": "english",
+      "autoload": true,
+      "autorun": false,
       "joystick": false,
       "controls": []
     },
@@ -716,6 +754,8 @@
       "category": "utility",
       "description": "Digital clock display. Runs entirely in machine code for smooth animation.",
       "language": "english",
+      "autoload": true,
+      "autorun": true,
       "joystick": false,
       "controls": []
     },
@@ -727,6 +767,8 @@
       "category": "educational",
       "description": "English past tense teaching tool — bilingual Hebrew/English. Quizzes on irregular verb past tense forms and tracks your score.",
       "language": "bilingual",
+      "autoload": true,
+      "autorun": true,
       "joystick": false,
       "controls": []
     },
@@ -738,6 +780,8 @@
       "category": "educational",
       "description": "Hebrew vocabulary flashcard trainer — development copy of JOT II (426 words).",
       "language": "bilingual",
+      "autoload": true,
+      "autorun": true,
       "joystick": false,
       "controls": []
     },
@@ -749,6 +793,8 @@
       "category": "game",
       "description": "Microb game (version 3, work in progress). The most advanced version — almost entirely in machine code. Uses Kempston joystick — mapped to cursor keys.",
       "language": "english",
+      "autoload": false,
+      "autorun": false,
       "joystick": true,
       "controls": [
         { "key": "← → ↑ ↓", "action": "Move ship" },
@@ -763,6 +809,8 @@
       "category": "game",
       "description": "Auxiliary module for Microb III. Uses Kempston joystick — mapped to cursor keys.",
       "language": "english",
+      "autoload": true,
+      "autorun": true,
       "joystick": true,
       "controls": [
         { "key": "← → ↑ ↓", "action": "Move" },
@@ -777,6 +825,8 @@
       "category": "game",
       "description": "Hunter game prototype (Hebrew: צייד). Aim and fire a gun in the forest.",
       "language": "english",
+      "autoload": true,
+      "autorun": true,
       "joystick": false,
       "controls": [
         { "key": "6", "action": "Move left" },
