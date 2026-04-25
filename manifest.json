@@ -518,7 +518,7 @@
 	  "machine": 48,
       "autorun": false,
       "autoload": false,
-      "joystick": false,
+      "joystick": true,
       "autorun": true,
       "controls": [
         { "key": "Z", "action": "Left" },
