@@ -287,7 +287,7 @@
       "file": "tapes/nir-programs/jot3.tzx",
       "folder": "nir-programs",
       "category": "educational",
-      "description": "Hebrew vocabulary flashcard trainer (version 3, 443 words). The most polished version with the largest word list.",
+      "description": "Hebrew vocabulary flashcard trainer (version 3, 443 words). The most polished version with the largest word list. When prompted, enter your answer or סיכום, סיום, נכון.",
       "language": "bilingual",
 	  "machine": 48,
       "autoload": true,
