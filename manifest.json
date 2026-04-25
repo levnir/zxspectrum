@@ -510,7 +510,7 @@
       "file": "tapes/nir-programs/professor.tzx",
       "folder": "nir-programs",
       "category": "game",
-      "description": "Professor must save the world from exploding by finding the right combination of chemicals in the tubes.",
+      "description": "Professor must save the world from exploding by finding the right combination of randomly chosen two or three chemicals in the tubes.",
       "language": "english",
 	  "machine": 48,
       "autorun": false,
