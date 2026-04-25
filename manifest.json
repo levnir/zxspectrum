@@ -289,6 +289,9 @@
       "category": "educational",
       "description": "Hebrew vocabulary flashcard trainer (version 3, 443 words). The most polished version with the largest word list.",
       "language": "bilingual",
+	  "machine": 48,
+      "autoload": true,
+      "autorun": false,
       "joystick": false,
       "controls": []
     },
@@ -429,7 +432,7 @@
       "file": "tapes/nir-programs/pangolins.tzx",
       "folder": "nir-programs",
       "category": "game",
-      "description": "Animal quiz game, v2. Seems like a more polished version with better Hebrew support.",
+      "description": "Animal quiz game, version 2. Seems like a more polished version with better Hebrew support.",
       "language": "bilingual",
       "autorun": false,
       "autoload": false,
