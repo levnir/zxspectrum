@@ -513,7 +513,7 @@
       "file": "tapes/nir-programs/professor.tzx",
       "folder": "nir-programs",
       "category": "game",
-      "description": "Professor must save the world from exploding by finding the right combination of randomly chosen two or three chemicals in the tubes.",
+      "description": "Professor must save the world from exploding by finding the right combination of randomly chosen two or three chemicals in the tubes. Remark: The number of minutes to complete the task is 30+15*n where n=2 or 3 is the number of ingredients in the chemical combination. To change the time, add the line \"9921 LET h=...\" and provide the desired number of minutes. Then run the program with \"RUN 9999\".",
       "language": "english",
 	  "machine": 48,
       "autorun": false,
