@@ -747,7 +747,12 @@
       "autoload": true,
       "autorun": false,
       "joystick": true,
-      "controls": []
+      "controls": [
+        { "key": "Z", "action": "Left" },
+        { "key": "X", "action": "Right" },
+        { "key": "Enter", "action": "Pick tube" },
+        { "key": "Space", "action": "Empty tube" }
+      ]
     },
     {
       "id": "clock",
