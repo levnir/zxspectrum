@@ -38,7 +38,7 @@
       "description": "Bulls and Cows number guessing game (Hebrew: בול פגיעה). The computer picks a secret 4 color code; you guess and are told how many colors are correct.",
       "language": "bilingual",
       "autorun": true,
-      "joystick": false,
+      "joystick": true,
       "controls": [
         { "key": "5", "action": "Move cursor left" },
         { "key": "8", "action": "Move cursor right" },
@@ -746,7 +746,7 @@
       "language": "english",
       "autoload": true,
       "autorun": false,
-      "joystick": false,
+      "joystick": true,
       "controls": []
     },
     {
@@ -836,7 +836,7 @@
         { "key": "7", "action": "Move right" },
         { "key": "8", "action": "Move up" },
         { "key": "9", "action": "Move down" },
-        { "key": "0", "action": "Sound" }
+        { "key": "0", "action": "Fire" }
       ]
     }
   ]
