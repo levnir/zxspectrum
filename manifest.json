@@ -742,7 +742,7 @@
       "file": "tapes/nir-temp/alch.tzx",
       "folder": "nir-temp",
       "category": "game",
-      "description": "Alchemy game (work in progress). A machine code game.",
+      "description": "Alchemy game (work in progress). This seems to be an early prototype for the Professor game.",
       "language": "english",
       "autoload": true,
       "autorun": false,
