@@ -35,14 +35,14 @@
       "file": "tapes/nir-programs/bul pghya.tzx",
       "folder": "nir-programs",
       "category": "game",
-      "description": "Bulls and Cows number guessing game (Hebrew: בול פגיעה). The computer picks a secret 4 color code; you guess and are told how many colors are correct.",
+      "description": "Bulls and Cows number guessing game (Hebrew: בול פגיעה). The computer picks a secret 4 color code; you guess and are told how many colors are correct. Remark: the game offers you a joystick option but in fact this does not enable joystick input, it just changes the control keys from 5/8/Enter to 6/7/0.",
       "language": "bilingual",
       "autorun": true,
       "joystick": true,
       "controls": [
-        { "key": "5", "action": "Move cursor left" },
-        { "key": "8", "action": "Move cursor right" },
-        { "key": "Enter", "action": "Choose the color" }
+        { "key": "5 (6)", "action": "Move cursor left" },
+        { "key": "8 (7)", "action": "Move cursor right" },
+        { "key": "Enter (0)", "action": "Choose the color" }
       ]
     },
     {
