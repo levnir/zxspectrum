@@ -9,8 +9,8 @@
       "description": "Biorhythm calculator. Enter your birth date and a start date to plot your physical (23-day), emotional (28-day) and intellectual (33-day) cycles on screen.",
       "language": "english",
 	  "machine": 48,
-      "autorun": false,
       "autoload": false,
+      "autorun": true,
       "joystick": false,
       "controls": []
     },
@@ -23,8 +23,8 @@
       "description": "Bomber arcade game. Fly over a city and drop bombs to destroy buildings.",
       "language": "english",
 	  "machine": 48,
-      "autorun": false,
-      "joystick": false,
+      "autoload": false,
+      "autorun": true,
       "controls": [
         { "key": "0", "action": "Drop bomb" }
       ]
@@ -38,6 +38,7 @@
       "description": "Bulls and Cows number guessing game (Hebrew: בול פגיעה). The computer picks a secret 4 color code; you guess and are told how many colors are correct.",
       "comments": "The game offers you a joystick option but in fact this does not enable joystick input, it just changes the control keys from 5/8/Enter to 6/7/0.",
       "language": "bilingual",
+      "autoload": false,
       "autorun": true,
       "joystick": false,
       "controls": [
@@ -54,8 +55,8 @@
       "category": "utility",
       "description": "UDG (User Defined Graphics) character editor. Design custom 8×8 pixel characters using an on-screen grid.",
       "language": "english",
-      "autorun": false,
       "autoload": false,
+      "autorun": true,
       "joystick": false,
       "controls": [
         { "key": "5", "action": "Move cursor left" },
@@ -113,7 +114,7 @@
       "description": "Screen layout design tool. Define boundaries (lines and tabs) and draw content within them — used for designing screen templates.",
       "language": "english",
 	  "machine": 48,
-      "autorun": false,
+      "autorun": true,
       "joystick": false,
       "controls": []
     },
@@ -168,7 +169,8 @@
       "file": "tapes/nir-programs/graph.tzx",
       "folder": "nir-programs",
       "category": "utility",
-      "description": "Graph plotting program. Plot the graph of a mathematical function on the ZX Spectrum screen. You need to input the function manually in the BASIC code in lines 200-999 before running the program. Then use RUN 9990 command to run the program.",
+      "description": "Graph plotting program. Plot the graph of a mathematical function on the ZX Spectrum screen.",
+      "comments": "You need to input the function manually in the BASIC code in lines 200-999 before running the program. Then use RUN 9990 command to run the program.",
       "language": "bilingual",
 	  "machine": 48,
       "autorun": false,
@@ -193,9 +195,10 @@
       "folder": "nir-programs",
       "category": "game",
       "description": "Classic word guessing game. One player enters a secret word; the other guesses letters. The gallows fills up with each wrong guess.",
+      "comments": "On the first prompt type in the secret word in english.",
       "language": "english",
-      "autorun": false,
       "autoload": false,
+      "autorun": true,
       "joystick": false,
       "controls": [
         { "key": "Letters", "action": "Guess a letter" }
@@ -209,6 +212,8 @@
       "category": "utility",
       "description": "Standalone Hebrew character set loader. Installs a custom Hebrew font into RAM for use by other programs.",
       "language": "english",
+      "autorun": false,
+      "autoload": false,
       "joystick": false,
       "controls": []
     },
@@ -218,17 +223,13 @@
       "file": "tapes/nir-programs/hex loader.tzx",
       "folder": "nir-programs",
       "category": "utility",
-      "description": "Interactive machine code hex editor. Browse memory by address and enter hex byte values — a developer tool for writing machine code directly on the Spectrum. The valid address range is from 16384 to 65535.",
+      "description": "Interactive machine code hex editor. Browse memory by address and enter hex byte values — a developer tool for writing machine code directly on the Spectrum.",
+      "comments": "The valid address range is from 16384 to 65535. Press: \"L\" or \"C\" and \"Enter\" to increment address. <CAPS SHIFT>+<g> and \"Enter\" to decrement address. \"J\" to change the address. \"L\" to print list. \"R\" to run program from current address.",
       "language": "english",
       "autorun": false,
       "autoload": false,
       "joystick": false,
-      "controls": [
-        { "key": "L", "action": "Load from tape" },
-        { "key": "R", "action": "Run code" },
-        { "key": "J", "action": "Jump to address" },
-        { "key": "Enter", "action": "Increment address" }
-      ]
+      "controls": []
     },
     {
       "id": "high-score-module",
@@ -238,6 +239,8 @@
       "category": "utility",
       "description": "Reusable high score entry screen. Navigate a character picker to enter your name and store the top 10 scores.",
       "language": "english",
+      "autorun": false,
+      "autoload": false,
       "joystick": true,
       "controls": [
         { "key": "← →", "action": "Select character" },
@@ -250,7 +253,7 @@
       "file": "tapes/nir-programs/horses.tzx",
       "folder": "nir-programs",
       "category": "game",
-      "description": "Horse racing simulation. Ten horses race across the screen at random — watch and cheer for your favourite! To run the program, type R and then Enter.",
+      "description": "Horse racing simulation. Ten horses race across the screen at random — watch and cheer for your favourite!",
       "language": "english",
 	  "machine": 48,
       "joystick": false,
@@ -266,8 +269,8 @@
       "category": "educational",
       "description": "Hebrew three-letter word guessing game (version 1, 372 words).",
       "language": "bilingual",
-      "autorun": false,
       "autoload": false,
+      "autorun": true,
       "joystick": false,
       "controls": []
     },
@@ -288,11 +291,12 @@
       "file": "tapes/nir-programs/jot3.tzx",
       "folder": "nir-programs",
       "category": "educational",
-      "description": "Hebrew three-letter word guessing game (version 3, 443 words). The most polished version with the largest word list. When prompted, enter your answer or סיכום or סיום. If the computer had correctly guessed your word, reply נ or נכון.",
+      "description": "Hebrew three-letter word guessing game (version 3, 443 words). The most polished version with the largest word list.",
+      "comments": "When prompted, enter your answer or סיכום or סיום. If the computer had correctly guessed your word, reply נ or נכון.",
       "language": "bilingual",
 	  "machine": 48,
-      "autoload": true,
-      "autorun": false,
+      "autoload": false,
+      "autorun": true,
       "joystick": false,
       "controls": []
     },
@@ -332,6 +336,7 @@
       "description": "You control a tooth microb that creates holes in teeth while avoiding the toothbrush.",
       "language": "english",
 	  "machine": 48,
+      "autoload": false,
       "autorun": true,
       "joystick": true,
       "controls": [
@@ -633,7 +638,7 @@
       "category": "educational",
       "description": "Statistics calculator with Hebrew interface. Enter data sets and calculate mean, standard deviation, and frequency distributions.",
       "language": "bilingual",
-      "autoload": true,
+      "autoload": false,
       "autorun": true,
       "joystick": false,
       "controls": []
@@ -646,7 +651,7 @@
       "category": "game",
       "description": "Swimmer must jump into water and swim to land while avoiding the shark.",
       "language": "english",
-      "autoload": true,
+      "autoload": false,
       "autorun": true,
       "joystick": false,
       "controls": [
@@ -667,7 +672,7 @@
       "language": "hebrew",
 	  "machine": 48,
       "autoload": false,
-      "autorun": false,
+      "autorun": true,
       "joystick": false,
       "controls": []
     },
@@ -679,7 +684,7 @@
       "category": "game",
       "description": "UFO arcade game. Fly over a city and drop bombs to destroy buildings. Uses machine code for fast action.",
       "language": "english",
-      "autoload": true,
+      "autoload": false,
       "autorun": true,
       "joystick": false,
       "controls": [
@@ -736,7 +741,7 @@
       "category": "game",
       "description": "Air raid arcade game (work in progress). Machine code game with custom graphics. Uses Kempston joystick — mapped to cursor keys.",
       "language": "english",
-      "autoload": true,
+      "autoload": false,
       "autorun": true,
       "joystick": true,
       "controls": [
@@ -752,14 +757,15 @@
       "category": "game",
       "description": "Alchemist game (work in progress). This seems to be an early prototype for the Professor game.",
       "language": "english",
-      "autoload": true,
-      "autorun": false,
+      "autoload": false,
+      "autorun": true,
       "joystick": true,
       "controls": [
         { "key": "Z", "action": "Left" },
         { "key": "X", "action": "Right" },
         { "key": "Enter", "action": "Pick tube" },
-        { "key": "Space", "action": "Empty tube" }
+        { "key": "Space", "action": "Empty tube" },
+        { "key": "H", "action": "Pause" }
       ]
     },
     {
@@ -770,7 +776,7 @@
       "category": "utility",
       "description": "Digital clock display. Runs entirely in machine code for smooth animation.",
       "language": "english",
-      "autoload": true,
+      "autoload": false,
       "autorun": true,
       "joystick": false,
       "controls": []
@@ -783,7 +789,7 @@
       "category": "educational",
       "description": "English past tense teaching tool — bilingual Hebrew/English. Quizzes on irregular verb past tense forms and tracks your score.",
       "language": "bilingual",
-      "autoload": true,
+      "autoload": false,
       "autorun": true,
       "joystick": false,
       "controls": []
@@ -794,9 +800,9 @@
       "file": "tapes/nir-temp/jot2.tzx",
       "folder": "nir-temp",
       "category": "educational",
-      "description": "Hebrew vocabulary flashcard trainer — development copy of JOT II (426 words).",
+      "description": "Hebrew three-letter word guessing game — development copy of JOT II (426 words).",
       "language": "bilingual",
-      "autoload": true,
+      "autoload": false,
       "autorun": true,
       "joystick": false,
       "controls": []
@@ -810,7 +816,7 @@
       "description": "Microb game (version 3, work in progress). The most advanced version — almost entirely in machine code. Uses Kempston joystick — mapped to cursor keys.",
       "language": "english",
       "autoload": false,
-      "autorun": false,
+      "autorun": true,
       "joystick": true,
       "controls": [
         { "key": "← → ↑ ↓", "action": "Move ship" },
@@ -841,7 +847,7 @@
       "category": "game",
       "description": "Hunter game prototype (Hebrew: צייד). Aim and fire a gun in the forest.",
       "language": "english",
-      "autoload": true,
+      "autoload": false,
       "autorun": true,
       "joystick": false,
       "controls": [
