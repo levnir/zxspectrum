@@ -201,6 +201,15 @@ function launchProgram(id) {
     controlsPanel.classList.add('hidden');
   }
 
+  // Comments panel
+  const commentsPanel = document.getElementById('comments-panel');
+  if (p.comments) {
+    document.getElementById('emu-comments').textContent = p.comments;
+    commentsPanel.classList.remove('hidden');
+  } else {
+    commentsPanel.classList.add('hidden');
+  }
+
   // Reset joystick state for the new program
   joystickActive = !!(p.joystick);
   kempstonState  = 0;
