@@ -228,7 +228,7 @@ function launchProgram(id) {
       machine: p.machine || 48,
       zoom: 2,
       autoStart: true,
-      autoLoadTapes: p.autoload !== false,
+      autoLoadTapes: p.autoload === true,
       tapeAutoLoadMode: 'default',
       tapeTrapsEnabled: true,
       sandbox: false,
@@ -238,7 +238,7 @@ function launchProgram(id) {
     emuInstance = JSSpeccy(emuContainer, opts);
   }
 
-  if (p.autorun !== true) {
+  if (p.autorun === false) {
     // Fetch TZX, patch LINE field to 0x8000 to suppress BASIC autostart
     fetch(p.file)
       .then(r => r.arrayBuffer())
